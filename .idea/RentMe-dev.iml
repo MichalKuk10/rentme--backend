@@ -16,7 +16,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="RentMe-dev" value="d7d8fb40-9427-4e2c-b5b7-fc9883c7234d" />
-          <factory-entry name="entityManagerFactory" value="d7d8fb40-9427-4e2c-b5b7-fc9883c7234d" />
+          <factory-entry name="entityManagerFactory" value="b3b14380-b829-430c-8182-bb5a4d5a6f66" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
@@ -43,6 +43,17 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-jwt:1.1.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.64" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.64" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-security:2.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:5.4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.auth0:java-jwt:3.11.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: commons-codec:commons-codec:1.14" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:5.4.0" level="project" />
     <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.9.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.1" level="project" />
