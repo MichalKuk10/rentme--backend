@@ -4,7 +4,6 @@ import com.codecool.model.Category;
 import com.codecool.service.CategoryService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @Controller

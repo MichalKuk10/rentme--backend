@@ -38,24 +38,24 @@ public class ItemConverter {
         return itemDTO;
     }
 
-    public ItemForListDTO itemToItemForListDTO(Item item) {
-        ItemForListDTO itemForListDTO = new ItemForListDTO();
-        itemForListDTO.setId(item.getId());
-        itemForListDTO.setName(item.getName());
-        itemForListDTO.setDescription(item.getDescription());
-        itemForListDTO.setPrice(item.getPrice());
-        itemForListDTO.setPicUrl(item.getPicUrl());
-        itemForListDTO.setCategory(item.getCategory());
-        itemForListDTO.setOwner(appUserConverter.entityToDTO(item.getOwner()));
+//    public ItemForListDTO itemToItemForListDTO(Item item) {
+//        ItemForListDTO itemForListDTO = new ItemForListDTO();
+//        itemForListDTO.setId(item.getId());
+//        itemForListDTO.setName(item.getName());
+//        itemForListDTO.setDescription(item.getDescription());
+//        itemForListDTO.setPrice(item.getPrice());
+//        itemForListDTO.setPicUrl(item.getPicUrl());
+//        itemForListDTO.setCategory(item.getCategory());
+//        itemForListDTO.setOwner(appUserConverter.entityToDTO(item.getOwner()));
+//
+//        return itemForListDTO;
+//    }
 
-        return itemForListDTO;
-    }
-
-    public List<ItemForListDTO> itemsToItemsForListDTO(List<Item> items) {
-        return items.stream()
-                .map(item -> itemToItemForListDTO(item))
-                .collect(Collectors.toList());
-    }
+//    public List<ItemForListDTO> itemsToItemsForListDTO(List<Item> items) {
+//        return items.stream()
+//                .map(item -> itemToItemForListDTO(item))
+//                .collect(Collectors.toList());
+//    }
 
     public Item DTOtoEntity(ItemDTO itemDTO) {
         Item item = new Item();

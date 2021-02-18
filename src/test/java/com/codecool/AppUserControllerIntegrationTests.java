@@ -62,9 +62,9 @@ public class AppUserControllerIntegrationTests {
     @Test
     public void should_return_created_status_code_when_user_added() throws Exception {
         AppUserDTO appUserDTO = new AppUserDTO();
-        appUserDTO.setAddress("krakow");
-        appUserDTO.setLng(123.33);
-        appUserDTO.setLat(123.22);
+//        appUserDTO.setAddress("krakow");
+//        appUserDTO.setLng(123.33);
+//        appUserDTO.setLat(123.22);
 
         mockMvc.perform(post("/users")
                 .contentType(MediaType.APPLICATION_JSON_VALUE)
@@ -98,7 +98,7 @@ public class AppUserControllerIntegrationTests {
     public void should_return_no_content_code_when_user_removed() throws Exception {
 
         AppUserDTO appUserDTO = new AppUserDTO();
-        appUserDTO.setId((long) 1);
+       // appUserDTO.setId((long) 1);
 
         mockMvc.perform(delete("/users/{id}",1))
                 .andExpect(status().isNoContent());

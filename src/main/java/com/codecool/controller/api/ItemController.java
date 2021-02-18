@@ -39,26 +39,26 @@ public class ItemController {
         return itemConverter.entityToDTO(itemService.findById(id));
     }
 
-    @GetMapping("/list/{searchPhrase}")
-    @ResponseBody
-    @ResponseStatus(OK)
-    public List<ItemForListDTO> findItemsByNameContaining(@PathVariable("searchPhrase") String searchPhrase) {
-        return itemConverter.itemsToItemsForListDTO(itemService.findItemsByNameContaining(searchPhrase.toUpperCase()));
-    }
-
-    @GetMapping("/categories/{searchPhrase}")
-    @ResponseBody
-    @ResponseStatus(OK)
-    public List<ItemForListDTO> findItemsByCategory(@PathVariable("searchPhrase") String searchPhrase) {
-        return itemConverter.itemsToItemsForListDTO(itemService.findItemsByCategory(searchPhrase.toUpperCase()));
-    }
-
-    @GetMapping("/users/{userId}")
-    @ResponseBody
-    @ResponseStatus(OK)
-    public List<ItemForListDTO> findItemsByUser(@PathVariable("userId") Long userId) {
-        return itemConverter.itemsToItemsForListDTO(itemService.findItemsByUser(userId));
-    }
+//    @GetMapping("/list/{searchPhrase}")
+//    @ResponseBody
+//    @ResponseStatus(OK)
+//    public List<ItemForListDTO> findItemsByNameContaining(@PathVariable("searchPhrase") String searchPhrase) {
+//        return itemConverter.itemsToItemsForListDTO(itemService.findItemsByNameContaining(searchPhrase.toUpperCase()));
+//    }
+//
+//    @GetMapping("/categories/{searchPhrase}")
+//    @ResponseBody
+//    @ResponseStatus(OK)
+//    public List<ItemForListDTO> findItemsByCategory(@PathVariable("searchPhrase") String searchPhrase) {
+//        return itemConverter.itemsToItemsForListDTO(itemService.findItemsByCategory(searchPhrase.toUpperCase()));
+//    }
+//
+//    @GetMapping("/users/{userId}")
+//    @ResponseBody
+//    @ResponseStatus(OK)
+//    public List<ItemForListDTO> findItemsByUser(@PathVariable("userId") Long userId) {
+//        return itemConverter.itemsToItemsForListDTO(itemService.findItemsByUser(userId));
+//    }
 
     //, dodac DTO zamiast Item
     @PostMapping()

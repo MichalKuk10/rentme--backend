@@ -2,12 +2,15 @@ package com.codecool.converter;
 
 import com.codecool.model.AppUser;
 import com.codecool.modelDTO.AppUserDTO;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
+
 public class AppUserConverter {
 
     public static AppUserDTO entityToDTO(AppUser appUser) {
