@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="RentMe" target="11" />
-      <module name="RentMe-dev" target="11" />
+      <module name="RentMe-dev" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
